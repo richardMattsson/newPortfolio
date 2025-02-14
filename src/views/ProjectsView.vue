@@ -1,10 +1,78 @@
 <template>
   <div id="container-projects">
-    <div v-for="card in cards" class="project-card">
+    <!-- <div v-for="card in cards" class="project-card">
       <a class="projectLinks" :href="card.projectLink" target="_blank"
         ><img class="projectImg" :src="card.imageSrc" :alt="card.altText"
       /></a>
       <p class="project-description">{{ card.description }}</p>
+    </div> -->
+    <div class="project-card">
+      <a
+        class="projectLinks"
+        href="https://richardmattsson.github.io/Todo-List/"
+        target="_blank"
+        ><img
+          class="projectImg"
+          src="../../assets/todolistvue.png"
+          alt="image of todolist-project"
+      /></a>
+      <p class="project-description">En Att-göra-lista gjord med Vue.js</p>
+    </div>
+    <div class="project-card">
+      <a
+        class="projectLinks"
+        href="https://richardmattsson.github.io/Erica/"
+        target="_blank"
+        ><img
+          class="projectImg"
+          src="../../assets/erica.png"
+          alt="image of artist-project"
+      /></a>
+      <p class="project-description">
+        Min lab under CSS-kursen där jag gjorde en hemsida åt en lokal konstnär
+        i Göteborg.
+      </p>
+    </div>
+    <div class="project-card">
+      <a
+        class="projectLinks"
+        href="https://richardmattsson.github.io/SoccerStats/"
+        target="_blank"
+        ><img
+          class="projectImg"
+          src="../../assets/soccerStat.png"
+          alt="image of soccer-table-project"
+      /></a>
+      <p class="project-description">
+        Under kursen Native Javascript gjorde jag en hemsida med tabeller från
+        de stora fotbollsligorna i Europa.
+      </p>
+    </div>
+    <div class="project-card">
+      <a
+        class="projectLinks"
+        href="https://richardmattsson.github.io/blackjack2/"
+        target="_blank"
+        ><img
+          class="projectImg"
+          src="../../assets/blackjack.png"
+          alt="image of blackjack-project"
+      /></a>
+      <p class="project-description">
+        Ett blackjack-spel gjord med Native JavaScript.
+      </p>
+    </div>
+    <div class="project-card">
+      <a
+        class="projectLinks"
+        href="https://richardmattsson.github.io/weatherApp/"
+        target="_blank"
+        ><img
+          class="projectImg"
+          src="../../assets/weather.png"
+          alt="image of a weather-app"
+      /></a>
+      <p class="project-description">En väderapp gjord med Vue.js</p>
     </div>
   </div>
 </template>
@@ -41,7 +109,7 @@ export default {
         },
         {
           projectLink: 'https://richardmattsson.github.io/weatherApp/',
-          imageSrc: '../../assets/weather.png',
+          imageSrc: '',
           altText: 'image of a weather-app',
           description: 'En väderapp gjord med Vue.js',
         },
