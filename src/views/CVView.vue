@@ -8,7 +8,7 @@
     <h2>
       <a
         target="_blank"
-        href="../../PortfolioRichard/public/images/Richard-Mattsson-CV-3.pdf"
+        href="/PortfolioRichard/images/Richard-Mattsson-CV-3.pdf"
         >Länk till CV som pdf</a
       >
     </h2>
