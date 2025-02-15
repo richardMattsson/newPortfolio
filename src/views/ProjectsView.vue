@@ -21,33 +21,33 @@ export default {
       cards: [
         {
           projectLink: 'https://richardmattsson.github.io/Todo-List/',
-          imageSrc: '../../PortfolioRichard/assets/todolistvue.png',
+          imageSrc: '../../PortfolioRichard/public/images/todolistvue.png',
           altText: 'image of todolist-project',
           description: 'En Att-göra-lista gjord med Vue.js',
         },
         {
           projectLink: 'https://richardmattsson.github.io/Erica/',
-          imageSrc: '../../PortfolioRichard/assets/erica.png',
+          imageSrc: '../../PortfolioRichard/public/images/erica.png',
           altText: 'image of artist-project',
           description:
             'Min lab under CSS-kursen där jag gjorde en hemsida åt en lokal konstnär i Göteborg.',
         },
         {
           projectLink: 'https://richardmattsson.github.io/SoccerStats/',
-          imageSrc: '../../PortfolioRichard/assets/soccerStat.png',
+          imageSrc: '../../PortfolioRichard/public/images/soccerStat.png',
           altText: 'image of soccer-table-project',
           description:
             'Under kursen Native Javascript gjorde jag en hemsida med tabeller från de stora fotbollsligorna i Europa.',
         },
         {
           projectLink: 'https://richardmattsson.github.io/blackjack2/',
-          imageSrc: '../../PortfolioRichard/assets/blackjack.png',
+          imageSrc: '../../PortfolioRichard/public/images/blackjack.png',
           altText: 'image of blackjack-project',
           description: 'Ett blackjack-spel gjord med Native JavaScript.',
         },
         {
           projectLink: 'https://richardmattsson.github.io/weatherApp/',
-          imageSrc: '../../PortfolioRichard/assets/weather.png',
+          imageSrc: '../../PortfolioRichard/public/images/weather.png',
           altText: 'image of a weather-app',
           description: 'En väderapp gjord med Vue.js',
         },

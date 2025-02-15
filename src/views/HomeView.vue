@@ -1,7 +1,7 @@
 <template>
   <article id="container">
     <figure>
-      <img class="profileImg" src="../../assets/profilbild.jpg" alt="" />
+      <img class="profileImg" src="../../public/images/profilbild.jpg" alt="" />
     </figure>
     <h1>Hej!</h1>
     <h2>
