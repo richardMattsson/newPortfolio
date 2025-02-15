@@ -14,12 +14,12 @@
       href="https://github.com/richardMattsson"
       target="_blank"
       ><img
-        src="../../public/images/GitHub_Logo_White.png"
+        src="/images/GitHub_Logo_White.png"
         alt=""
         srcset=""
         id="github-logo-text" />
       <img
-        src="../../public/images/github-mark-white.png"
+        src="/images/github-mark-white.png"
         alt=""
         srcset=""
         id="github-logo"

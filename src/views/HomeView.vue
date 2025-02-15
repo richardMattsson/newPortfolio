@@ -1,12 +1,12 @@
 <template>
   <article id="container">
     <figure>
-      <img class="profileImg" src="../../public/images/profilbild.jpg" alt="" />
+      <img class="profileImg" src="/images/profilbild.jpg" alt="" />
     </figure>
     <h1>Hej!</h1>
     <h2>
       Välkommen till min sida där jag lägger upp mina projekt inom
-      webbutveckling.
+      webbutveckling!
     </h2>
   </article>
 </template>
