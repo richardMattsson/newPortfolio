@@ -19,6 +19,7 @@ nav {
   display: flex;
   justify-content: center;
   position: sticky;
+  z-index: 1;
   top: 10px;
 }
 ul {

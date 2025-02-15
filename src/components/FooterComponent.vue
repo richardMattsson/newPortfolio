@@ -27,21 +27,18 @@
   </footer>
 </template>
 <style scoped>
-img {
-  width: 100px;
-}
-#linkedin-logo {
-  width: 125px;
-}
 #div-github-logo {
   display: flex;
   align-items: center;
 }
+#linkedin-logo {
+  width: 100px;
+}
 #github-logo {
-  width: 60px;
+  width: 40px;
 }
 #github-logo-text {
-  width: 100px;
+  width: 70px;
 }
 
 footer {
@@ -52,6 +49,31 @@ footer {
   justify-content: space-evenly;
   position: relative;
   bottom: 10px;
-  margin-top: 40px;
+  height: 150px;
+  flex: 1 1 auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+  #linkedin-logo {
+    width: 70px;
+  }
+  #github-logo {
+    width: 30px;
+  }
+  #github-logo-text {
+    width: 55px;
+  }
+}
+@media (max-width: 800px) {
+  #linkedin-logo {
+    width: 75px;
+  }
+  #github-logo {
+    width: 35px;
+  }
+  #github-logo-text {
+    width: 60px;
+  }
 }
 </style>
