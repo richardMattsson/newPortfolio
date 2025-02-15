@@ -3,7 +3,7 @@
     <a href="http://www.linkedin.com/in/richardmattsson" target="_blank"
       ><img
         class="linkedin-logo"
-        src="../../assets/LI-Logo.png"
+        src="../../public/images/LI-Logo.png"
         alt=""
         srcset=""
         id="linkedin-logo"
@@ -14,12 +14,12 @@
       href="https://github.com/richardMattsson"
       target="_blank"
       ><img
-        src="../../assets/GitHub_Logo_White.png"
+        src="../../public/images/GitHub_Logo_White.png"
         alt=""
         srcset=""
         id="github-logo-text" />
       <img
-        src="../../assets/github-mark-white.png"
+        src="../../public/images/github-mark-white.png"
         alt=""
         srcset=""
         id="github-logo"

@@ -1,11 +1,14 @@
 <template>
   <div id="container">
-    <img src="../../assets/Richard-Mattsson-CV.jpg" alt="En bild på mitt CV" />
+    <img
+      src="../../public/images/Richard-Mattsson-CV.jpg"
+      alt="En bild på mitt CV"
+    />
 
     <h2>
       <a
         target="_blank"
-        href="../../PortfolioRichard/assets/Richard-Mattsson-CV-3.pdf"
+        href="../../PortfolioRichard/public/images/Richard-Mattsson-CV-3.pdf"
         >Länk till CV som pdf</a
       >
     </h2>
