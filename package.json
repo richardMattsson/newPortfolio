@@ -1,10 +1,14 @@
 {
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-vue-next": "^0.28.3",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
+    "sass-embedded": "^1.86.1",
+    "unplugin-vue-components": "^28.4.1",
     "vite": "^6.0.5"
   },
   "name": "my-project",

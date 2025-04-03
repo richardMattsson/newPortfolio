@@ -1,56 +1,65 @@
 <template>
   <nav>
     <ul>
-      <li>
-        <RouterLink to="/">Hem</RouterLink>
+      <li class="nav-text">
+        <RouterLink to="/"><span class="green-text">01.</span> Hem</RouterLink>
       </li>
-      <li>
-        <RouterLink to="/projects">Projects</RouterLink>
+      <li class="nav-text">
+        <RouterLink to="/projects"
+          ><span class="green-text">02.</span> Projekt</RouterLink
+        >
       </li>
-      <li>
-        <RouterLink to="/cv">CV</RouterLink>
+      <li class="nav-text">
+        <RouterLink to="/cv"><span class="green-text">03.</span> CV</RouterLink>
+      </li>
+      <li class="nav-text">
+        <RouterLink to="/contact"
+          ><span class="green-text">04.</span> Contact</RouterLink
+        >
       </li>
     </ul>
   </nav>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+$primary-color: #183153;
+$dark-color: rgba(0, 30, 66, 0.85);
+$light-color: #515e7b;
+
 nav {
   display: flex;
-  justify-content: center;
-  position: sticky;
-  z-index: 1;
-  top: 10px;
+  justify-content: flex-end;
+}
+.nav-text {
+  display: flex;
+  font-size: 0.9rem;
 }
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  font-family: sans-serif;
-  font-size: 1.2rem;
+  margin-left: 0;
+  padding-left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
-  /* border: 1px solid black; */
 }
 
 li {
-  float: left;
-  background-color: rgba(55, 64, 71, 0.85);
-  width: 100%;
-  height: 60px;
-  /* border: 1px solid white; */
+  // float: left;
+
+  // background-color: $dark-color;
+  // width: 100%;
+  // height: 60px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 5px solid #333;
+
+  // border: 2px solid $primary-color;
 }
-li:last-child {
-  border-right: none;
-}
+// li:last-child {
+
+// }
 
 li a {
   display: block;
@@ -60,8 +69,21 @@ li a {
   text-decoration: none;
 }
 
-li:hover {
-  background-color: rgba(67, 77, 85, 0.85);
-  cursor: pointer;
+// li:hover {
+//   background-color: rgba(81, 94, 123, 0.85);
+//   cursor: pointer;
+// }
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+  nav {
+    margin-right: 40px;
+  }
+  .nav-text {
+    display: flex;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1279px) {
 }
 </style>

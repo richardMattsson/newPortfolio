@@ -3,7 +3,7 @@
     <a href="http://www.linkedin.com/in/richardmattsson" target="_blank"
       ><img
         class="linkedin-logo"
-        src="../../public/images/LI-Logo.png"
+        src="/images/LI-Logo.png"
         alt=""
         srcset=""
         id="linkedin-logo"
@@ -26,7 +26,10 @@
     /></a>
   </footer>
 </template>
-<style scoped>
+<style lang="scss" scoped>
+$primary-color: #183153;
+$dark-color: rgb(0, 30, 66);
+$light-color: #515e7b;
 #div-github-logo {
   display: flex;
   align-items: center;
@@ -42,16 +45,17 @@
 }
 
 footer {
+  background-color: $dark-color;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-  bottom: 10px;
-  height: 150px;
-  flex: 1 1 auto;
-  margin-top: 20px;
+  bottom: 0;
+  height: 100px;
+  // flex: 1 1 auto;
+  // margin-top: 20px;
 }
 
 @media (max-width: 400px) {

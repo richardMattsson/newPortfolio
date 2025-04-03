@@ -1,19 +1,61 @@
+<script setup>
+import CVComponent from '../components/CVComponent.vue';
+import ProfileComponent from '../components/ProfileComponent.vue';
+import ProjectsComponent from '../components/ProjectsComponent.vue';
+import NavbarComponent from '../components/NavbarComponent.vue';
+import FooterComponent from '../components/FooterComponent.vue';
+</script>
+
 <template>
   <article id="container">
-    <figure>
-      <img class="profileImg" src="/images/profilbild.jpg" alt="" />
-    </figure>
-    <h1>Hej!</h1>
-    <h2>
-      Välkommen till min sida där jag lägger upp mina projekt inom
-      webbutveckling!
-    </h2>
+    <!-- <p id="logo" class="green-text">R</p> -->
+
+    <!-- <NavbarComponent id="navbar" /> -->
+
+    <ProfileComponent id="profileText" />
+    <!-- <ProjectsComponent /> -->
+    <!-- <CVComponent /> -->
+    <!-- <FooterComponent id="footer" /> -->
   </article>
 </template>
 
 <style scoped>
-#container {
+/* #logo {
+  grid-area: logo;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#navbar {
+  grid-area: navbar;
+  margin-left: 20%;
+} */
+#profileText {
+  grid-area: profileText;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  /* border: 1px solid red; */
+}
+body {
+  /* min-height: 100vh;
+  display: flex;
+  flex-direction: column; */
+}
+#container {
+  /* border: 1px solid red; */
+  /* width: 100%;
+  display: grid;
+  grid: 10% 70% 20% / 10% 90%;
+  grid-template-areas:
+    'logo navbar'
+    'profileText profileText'
+    'footer footer';
+  height: 100vh; */
+  /* flex-grow: 1; */
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
 
@@ -22,36 +64,27 @@
   margin-bottom: 50px;
 
   align-items: center;
-  /* border: 1px solid red; */
-  max-width: 1000px;
-}
 
-img {
-  width: 150px;
-  min-width: 100px;
-  border-radius: 80px;
-  margin-top: 10px;
+  max-width: 1000px; */
 }
-h1,
-h2 {
-  font-weight: 500;
-  margin-left: 80px;
-  margin-right: 80px;
+#footer {
+  margin-top: auto;
+  /* border: 1px solid red;*/
+  /* grid-area: footer; */
 }
-@media (max-width: 400px) {
-  h1,
-  h2 {
-    font-weight: 500;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 1.2rem;
-    text-align: center;
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+  #profileText {
+    grid-area: profileText;
+    margin-left: 80px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    /* border: 1px solid red; */
   }
-  h1 {
-    font-size: 1.5rem;
-  }
-  h2 {
-    line-height: 30px;
-  }
+}
+@media only screen and (min-width: 1279px) {
 }
 </style>

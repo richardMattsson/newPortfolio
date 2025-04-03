@@ -1,72 +1,49 @@
+<script setup>
+import CVComponent from '../components/CVComponent.vue';
+import NavbarComponent from '../components/NavbarComponent.vue';
+</script>
+
 <template>
-  <div id="container">
-    <img
-      src="../../public/images/Richard-Mattsson-CV.jpg"
+  <!-- <NavbarComponent /> -->
+
+  <div id="container-cv-view">
+    <CVComponent />
+    <!-- <img
+      src="../../public/images/CV-Richard-Mattsson-2.jpg"
       alt="En bild på mitt CV"
     />
-
-    <h2>
-      <a
-        target="_blank"
-        href="/PortfolioRichard/images/Richard-Mattsson-CV-3.pdf"
+    <button>
+      <a href="/PortfolioRichard/CV-Richard-Mattsson-2.pdf"
         >Länk till CV som pdf</a
       >
-    </h2>
+    </button> -->
   </div>
 </template>
-<style scoped>
-#container {
+
+<style lang="scss" scoped>
+$primary-color: #183153;
+$dark-color: rgb(0, 30, 66);
+$light-color: #515e7b;
+$yellow-color: #ffd43b;
+
+#container-cv-view {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
 }
-h2 {
-  margin-top: 30px;
-  font-weight: 500;
-  font-size: 1.3rem;
-}
-a {
-  color: #dfd9d9;
-}
-img {
-  width: 60%;
-  height: 70%;
-  margin-top: 80px;
-  border-radius: 10px;
-}
-@media (max-width: 400px) {
-  h2 {
-    font-size: 1.1rem;
-    margin-top: 30px;
-  }
-  img {
-    width: 80%;
-    min-width: 300px;
-    margin-top: 40px;
-  }
-}
-@media (max-width: 800px) {
-  h2 {
-    margin-top: 30px;
-    font-size: 1.2rem;
-  }
 
-  img {
-    width: 80%;
-    height: auto;
-    margin-top: 40px;
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 768px) {
+  #container-cv-view {
+    display: flex;
+    // border: 1px solid blue;
+    justify-content: center;
+    width: 100%;
+    // margin-left: 80px;
   }
 }
-@media (min-width: 801px) {
-  h2 {
-    margin-top: 30px;
-    font-size: 1.2rem;
-  }
-
-  img {
-    max-width: 850px;
-    height: auto;
-    margin-top: 40px;
-  }
+@media only screen and (min-width: 1279px) {
 }
 </style>
