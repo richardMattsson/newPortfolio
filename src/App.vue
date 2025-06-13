@@ -49,17 +49,18 @@ $text-green: #54c4af;
 
 #router-logo {
   text-decoration: none;
+  height: 50px;
+  width: 25px;
 }
 #app-logo {
   // grid-area: logo;
 
-  margin-left: 10px;
   margin-top: 20px;
   font-size: 1.5rem;
   border: $text-green 1px solid;
   border-radius: 70%;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -109,12 +110,12 @@ body {
   #app-logo {
     grid-area: logo;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 2rem;
     border: $text-green 1px solid;
-    border-radius: 70%;
-    height: 25px;
-    width: 25px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     padding: 10px;
     display: flex;
     justify-content: center;

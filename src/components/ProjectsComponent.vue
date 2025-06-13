@@ -17,6 +17,13 @@ export default {
     return {
       cards: [
         {
+          projectLink: 'https://richardmattsson.github.io/library/',
+          imageSrc: '/images/harrypotterbild.png',
+          altText: 'image of library app',
+          description:
+            'Ett bibliotek där du kan skapa konto och spara dina favoritböcker och ge betyg.',
+        },
+        {
           projectLink: 'https://richardmattsson.github.io/hesafredrik/',
           imageSrc: '/images/hesafredrik.png',
           altText: 'image of app about crisis preparedness',
