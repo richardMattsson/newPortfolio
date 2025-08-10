@@ -21,7 +21,7 @@ export default {
           imageSrc: '/images/harrypotterbild.png',
           altText: 'image of library app',
           description:
-            'Ett bibliotek där du kan skapa konto och spara dina favoritböcker och ge betyg.',
+            'Ett bibliotek där du kan skapa konto och spara dina favoritböcker och ge betyg. Byggt med React.',
         },
         {
           projectLink: 'https://richardmattsson.github.io/hesafredrik/',
@@ -56,14 +56,14 @@ export default {
           altText: 'image of a weather-app',
           description: 'En väderapp gjord med Vue.js',
         },
-        // {
-        //   projectLink: 'https://richardmattsson.github.io/Todo-List/',
-        //   imageSrc: '/images/todolistvue.png',
-        //   altText: 'image of todolist-project',
-        //   description: 'En Att-göra-lista gjord med Vue.js',
-        // },
         {
-          projectLink: 'https://richardmattsson.github.io/Erica/',
+          projectLink: 'https://richardmattsson.github.io/Todo-List/',
+          imageSrc: '/images/todolistvue.png',
+          altText: 'image of todolist-project',
+          description: 'En Att-göra-lista gjord med Vue.js',
+        },
+        {
+          projectLink: 'https://richardmattsson.github.io/paintings-website/',
           imageSrc: '/images/erica.png',
           altText: 'image of artist-project',
           description:
@@ -100,6 +100,8 @@ $yellow-color: #ffd43b;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
   border: 2px solid $light-color;
   //   background-color: #222121;
   background-color: $dark-color;

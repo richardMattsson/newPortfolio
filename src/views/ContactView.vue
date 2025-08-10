@@ -104,13 +104,13 @@ const stateEmail = computed(() => email.value?.includes('@'));
             v-model="text"
             :state="state"
             v-model.trim="text"
-            placeholder="Enter your name"
+            placeholder="Skriv ditt namn"
             name="name"
             class="bg-transparent text-light form-control"
           />
 
           <BFormInvalidFeedback id="input-live-feedback">
-            Enter at least 3 letters
+            Använd minst 3 tecken.
           </BFormInvalidFeedback>
         </BCol>
         <BCol cols="6">
@@ -122,9 +122,7 @@ const stateEmail = computed(() => email.value?.includes('@'));
             name="email"
             class="bg-transparent text-light form-control"
           />
-          <BFormInvalidFeedback>
-            Enter a valid email address</BFormInvalidFeedback
-          >
+          <BFormInvalidFeedback> Skriv en giltig email</BFormInvalidFeedback>
         </BCol>
         <BCol cols="12">
           <BFormTextarea
