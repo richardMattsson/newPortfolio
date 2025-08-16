@@ -7,8 +7,8 @@ const email = ref('');
 const textEx = ref('');
 const show = ref(true);
 
-const state = computed(() => (text.value?.length > 2 ? true : false));
-const stateEmail = computed(() => email.value?.includes('@'));
+// const state = computed(() => (text.value?.length > 2 ? true : false));
+// const stateEmail = computed(() => email.value?.includes('@'));
 </script>
 
 <template>
@@ -89,7 +89,7 @@ const stateEmail = computed(() => email.value?.includes('@'));
     </form>
   </div> -->
 
-  <h1>Skicka ett meddelande till mig.</h1>
+  <h1>Kontakta mig.</h1>
   <BForm
     v-if="show"
     target="_blank"
@@ -98,27 +98,27 @@ const stateEmail = computed(() => email.value?.includes('@'));
     class="submit-form"
   >
     <BContainer fluid="sm">
-      <BRow>
-        <BCol cols="6">
+      <BRow class="g-3">
+        <BCol cols="12">
           <BFormInput
             v-model="text"
             :state="state"
             v-model.trim="text"
-            placeholder="Skriv ditt namn"
+            placeholder="Namn"
             name="name"
-            class="bg-transparent text-light form-control"
+            class="bg-transparent text-light"
           />
 
-          <BFormInvalidFeedback id="input-live-feedback">
+          <!-- <BFormInvalidFeedback id="input-live-feedback">
             Använd minst 3 tecken.
-          </BFormInvalidFeedback>
+          </BFormInvalidFeedback> -->
         </BCol>
-        <BCol cols="6">
+        <BCol cols="12">
           <BFormInput
             v-model="email"
             :state="stateEmail"
             type="email"
-            placeholder="Enter your email"
+            placeholder="Mail"
             name="email"
             class="bg-transparent text-light form-control"
           />
@@ -137,9 +137,9 @@ const stateEmail = computed(() => email.value?.includes('@'));
           <BButton
             type="submit"
             variant="outline-light"
-            class="mt-3 w-100 text-light submit-button bg-transparent"
-            squared
-            >Submit</BButton
+            class="w-100 text-light submit-button"
+            rounded
+            >Skicka</BButton
           >
         </BCol>
       </BRow>
@@ -157,7 +157,7 @@ const stateEmail = computed(() => email.value?.includes('@'));
 h1 {
   font-size: 2rem;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   text-align: center;
 }
 #contact-article {
@@ -196,11 +196,17 @@ h1 {
 .form-control:-ms-input-placeholder {
   color: white;
 }
-#submit-button:hover {
-  background-color: blue;
+
+$primary-color: #183153;
+
+.submit-button:hover {
+  background-color: $primary-color;
 }
 
 @media only screen and (min-width: 480px) {
+  /* .submit-button {
+    text-align: start;
+  } */
 }
 @media only screen and (min-width: 768px) {
   .submit-form {

@@ -20,7 +20,7 @@ h1 {
 }
 #container-projectsView {
   display: flex;
-
+  /* border: 1px solid white; */
   justify-content: center;
 
   width: 100%;
@@ -30,10 +30,10 @@ h1 {
 }
 @media only screen and (min-width: 768px) {
   #container-projectsView {
-    display: flex;
+    /* display: flex; */
     // border: 1px solid blue;
-    justify-content: center;
-    width: 100%;
+    /* justify-content: center; */
+    /* width: 100%; */
     // margin-left: 80px;
   }
 }

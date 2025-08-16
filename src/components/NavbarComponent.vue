@@ -14,7 +14,7 @@
       </li>
       <li class="nav-text">
         <RouterLink to="/contact"
-          ><span class="green-text">04.</span> Contact</RouterLink
+          ><span class="green-text">04.</span> Kontakt</RouterLink
         >
       </li>
     </ul>
@@ -73,6 +73,29 @@ li a {
 //   background-color: rgba(81, 94, 123, 0.85);
 //   cursor: pointer;
 // }
+@media only screen and (max-width: 479px) {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid white; */
+    max-width: 300px;
+  }
+  .nav-text {
+    display: flex;
+    font-size: 0.9rem;
+    /* border: 1px solid blue; */
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+  }
+}
 @media only screen and (min-width: 480px) {
 }
 @media only screen and (min-width: 768px) {

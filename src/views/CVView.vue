@@ -32,7 +32,14 @@ $yellow-color: #ffd43b;
   align-items: center;
   margin-bottom: 10px;
 }
-
+@media only screen and (max-width: 479px) {
+  #container-cv-view {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
 @media only screen and (min-width: 480px) {
 }
 @media only screen and (min-width: 768px) {

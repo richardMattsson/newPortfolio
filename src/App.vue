@@ -82,6 +82,7 @@ $text-green: #54c4af;
 body {
   background-color: $primary-dark;
   color: $text-light;
+  border: 1px solid white;
 }
 
 .green-text {
@@ -99,6 +100,10 @@ body {
   width: 100%;
   bottom: 0;
 }
+
+@media only screen and (max-width: 400px) {
+}
+
 @media only screen and (min-width: 480px) {
 }
 @media only screen and (min-width: 768px) {

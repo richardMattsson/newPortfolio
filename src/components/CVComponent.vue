@@ -1,9 +1,9 @@
 <template>
-  <button>
-    <a href="/CV-Richard-Mattsson-2.pdf">Länk till CV som pdf</a>
-  </button>
-
   <img src="/images/CV-Richard-Mattsson-2.jpg" alt="En bild på mitt CV" />
+
+  <button>
+    <a href="/CV-Richard-Mattsson-2.pdf">Hämta</a>
+  </button>
 </template>
 
 <style lang="scss" scoped>
@@ -41,6 +41,17 @@ button {
 button:hover {
   background-color: #c2a025;
   cursor: pointer;
+}
+@media only screen and (max-width: 479px) {
+  img {
+    width: 80%;
+    min-width: 200px;
+    // height: 70%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: $dark-color 2px solid;
+  }
 }
 
 @media only screen and (min-width: 480px) {

@@ -6,7 +6,7 @@
       /></a>
       <p class="project-description">{{ card.description }}</p>
       <button>
-        <a class="buttonLinks" :href="card.projectLink">Länk</a>
+        <a class="buttonLinks" :href="card.projectLink">Visa</a>
       </button>
     </div>
   </div>
@@ -87,14 +87,14 @@ $yellow-color: #ffd43b;
 
 #container-projects {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
   /* flex-wrap: wrap; */
   // margin-top: 80px;
-  // border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .project-card {
   display: flex;
@@ -109,8 +109,11 @@ $yellow-color: #ffd43b;
   box-shadow: 5px 10px black;
   border-radius: 20px;
   margin: 20px;
-  height: 400px;
-  max-width: 205px;
+  padding: 10px;
+  gap: 15px;
+  /* height: 400px; */
+  /* max-width: 205px; */
+  /* width: 80%; */
 }
 .projectLinks {
   display: flex;
@@ -135,6 +138,7 @@ button {
   width: 100px;
   padding: 5px;
   box-shadow: 0 4px;
+  margin-bottom: 15px;
 }
 button:hover {
   background-color: #c2a025;
@@ -179,35 +183,20 @@ button:hover {
 //   }
 // }
 @media only screen and (min-width: 480px) {
+  .project-card {
+    min-height: 400px;
+    max-width: 400px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .project-card {
-    // display: flex;
-    // flex-direction: column;
-
-    // justify-content: center;
-    // align-items: center;
-    // border: 2px solid $light-color;
-    //   background-color: #222121;
-    // background-color: $dark-color;
-    // border: black 1px solid;
-    // box-shadow: 5px 10px black;
-    // border-radius: 20px;
-    // margin: 20px;
-    // height: 500px;
-    // max-width: 350px;
   }
   #container-projects {
-    // display: flex;
     width: 70%;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    // border: 1px solid red;
-
-    // margin-top: 80px;
-    // border: 1px solid blue;
   }
 }
 @media only screen and (min-width: 1279px) {
