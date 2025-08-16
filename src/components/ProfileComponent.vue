@@ -41,11 +41,12 @@ h2 {
   margin: 0;
   margin-bottom: 20px;
   color: #ccd6f6a4;
+  width: 80%;
 }
 #description-info {
   font-size: 1rem;
   color: #ccd6f6a4;
-  width: 250px;
+  width: 80%;
   line-height: 25px;
 }
 

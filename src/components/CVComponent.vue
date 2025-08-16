@@ -15,7 +15,7 @@ $yellow-color: #ffd43b;
 a {
   color: $dark-color;
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-decoration: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
@@ -37,6 +37,7 @@ button {
   padding: 8px 10px;
   box-shadow: 0 4px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 button:hover {
   background-color: #c2a025;
@@ -52,6 +53,17 @@ button:hover {
     border-radius: 10px;
     border: $dark-color 2px solid;
   }
+
+  button {
+    background-color: $yellow-color;
+    border-radius: 10px;
+    border: black 1px solid;
+    width: 100px;
+    padding: 8px;
+    box-shadow: 0 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -59,7 +71,7 @@ button:hover {
     background-color: $yellow-color;
     border-radius: 10px;
     border: black 1px solid;
-    width: 200px;
+    width: 150px;
     padding: 10px;
     box-shadow: 0 4px;
     margin-top: 20px;
@@ -84,6 +96,9 @@ button:hover {
     max-width: 550px;
     height: auto;
     margin-top: 40px;
+  }
+  a {
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1279px) {

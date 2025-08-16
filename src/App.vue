@@ -82,7 +82,6 @@ $text-green: #54c4af;
 body {
   background-color: $primary-dark;
   color: $text-light;
-  border: 1px solid white;
 }
 
 .green-text {
