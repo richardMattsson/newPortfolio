@@ -1,6 +1,6 @@
 <script setup>
-import NavbarComponent from './components/NavbarComponent.vue';
-import FooterComponent from './components/FooterComponent.vue';
+import NavbarComponent from "./components/NavbarComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 </script>
 
 <template>
@@ -27,15 +27,8 @@ $text-light: #c3c7d6;
 $text-green: #54c4af;
 
 #app-container {
-  // border: 1px solid red;
-
+  border: 1px solid rgb(104, 59, 228);
   width: 100%;
-  // display: grid;
-  // grid: 100px 80% 10% / 10% 90%;
-  // grid-template-areas:
-  //   'logo navbar'
-  //   'main main'
-  //   'footer footer';
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -53,8 +46,6 @@ $text-green: #54c4af;
   width: 25px;
 }
 #app-logo {
-  // grid-area: logo;
-
   margin-top: 20px;
   font-size: 1.5rem;
   border: $text-green 1px solid;
@@ -66,18 +57,9 @@ $text-green: #54c4af;
   justify-content: center;
   align-items: center;
 }
-
-#app-navbar {
-  // display: flex;
-  // justify-content: center;
-  // grid-area: navbar;
-  // margin-right: 20px;
-  // margin-top: 15px;
-}
 #app-main {
-  // grid-area: main;
-  // margin-bottom: 20px;
   flex-grow: 1;
+  // border: 1px solid red;
 }
 body {
   background-color: $primary-dark;
@@ -91,10 +73,6 @@ body {
 }
 
 #app-footer {
-  // margin-top: auto;
-  /* border: 1px solid red;*/
-  // grid-area: footer;
-  // overflow: hidden;
   position: relative;
   width: 100%;
   bottom: 0;

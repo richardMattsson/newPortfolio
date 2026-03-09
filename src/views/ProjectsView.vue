@@ -1,9 +1,9 @@
 <script setup>
-import ProjectsComponent from '../components/ProjectsComponent.vue';
+import ProjectsComponent from "../components/ProjectsComponent.vue";
 </script>
 
 <template>
-  <h1>Mina projekt</h1>
+  <!-- <h1>Mina projekt</h1>s -->
   <article id="container-projectsView">
     <ProjectsComponent />
   </article>
@@ -19,9 +19,9 @@ h1 {
   text-align: center;
 }
 #container-projectsView {
-  display: flex;
-  /* border: 1px solid white; */
-  justify-content: center;
+  // display: flex;
+  // border: 1px solid white;
+  // justify-content: center;
 
   width: 100%;
 }
@@ -30,11 +30,6 @@ h1 {
 }
 @media only screen and (min-width: 768px) {
   #container-projectsView {
-    /* display: flex; */
-    // border: 1px solid blue;
-    /* justify-content: center; */
-    /* width: 100%; */
-    // margin-left: 80px;
   }
 }
 @media only screen and (min-width: 1279px) {
