@@ -1,137 +1,137 @@
 const projects = [
+  // {
+  //   title: 'Case Timeline',
+  //   eyebrow: 'Fullstack visualisation',
+  //   projectLink: 'https://case-timeline.richardmattsson.se',
+  //   githubLink: 'https://github.com/richardMattsson/Case-Timeline',
+  //   imageSrc: '/images/case-timeline.jpg',
+  //   altText: 'image of case-timeline',
+  //   description:
+  //     'Visualisering av ärenden utifrån ett tidsperspektiv. Grafiskt gränssnitt utvecklat med React, D3 och visx.',
+  //   focus:
+  //     'Att bygga ett verktyg som gör det enklare att se hur ett ärende utvecklas över tid, istället för att bara läsa det som en lista av händelser.',
+  //   build:
+  //     'Har fokuserat på att koppla ihop backend, databas och ett tydligt tidslinjegränssnitt så att informationen blir lätt att följa visuellt.',
+  //   nextStep:
+  //     'Nästa steg är att förbättra filtrering, datamodell och presentation så att timeline-vyn blir starkare som arbetsverktyg.',
+  //   tech: 'D3, visx, Node.js, Express, Postgres, Docker',
+  // },
   {
-    title: 'Case Timeline',
-    eyebrow: 'Fullstack visualisation',
-    projectLink: 'https://case-timeline.richardmattsson.se',
-    githubLink: 'https://github.com/richardMattsson/Case-Timeline',
-    imageSrc: '/images/case-timeline.jpg',
-    altText: 'image of case-timeline',
+    title: "Breadshop",
+    eyebrow: "E-commerce exercise",
+    projectLink: "https://breadshop.richardmattsson.se",
+    githubLink: "https://github.com/richardMattsson/lab_typescript_cypress",
+    imageSrc: "/images/breadshop.jpg",
+    altText: "image of a online breadshop",
     description:
-      'Visualisering av ärenden utifrån ett tidsperspektiv. Grafiskt gränssnitt utvecklat med React, D3 och visx.',
+      "En fullstack-app byggd med React, Express och Postgres. Testad med Cypress.",
     focus:
-      'Att bygga ett verktyg som gör det enklare att se hur ett ärende utvecklas över tid, istället för att bara läsa det som en lista av händelser.',
+      "Målet var att bygga ett mindre e-handelsflöde där frontend, backend och databas faktiskt hänger ihop på ett realistiskt sätt.",
     build:
-      'Har fokuserat på att koppla ihop backend, databas och ett tydligt tidslinjegränssnitt så att informationen blir lätt att följa visuellt.',
+      "Jag arbetade med produktflöden, API-kommunikation och databaslogik samt testade viktiga användarflöden med Cypress.",
     nextStep:
-      'Nästa steg är att förbättra filtrering, datamodell och presentation så att timeline-vyn blir starkare som arbetsverktyg.',
-    tech: 'D3, visx, Node.js, Express, Postgres, Docker',
+      "Jag skulle vilja vidareutveckla checkout-flödet och göra administrationsdelen tydligare.",
+    tech: "React, TypeScript, Express, Postgres, Cypress",
   },
   {
-    title: 'Breadshop',
-    eyebrow: 'E-commerce exercise',
-    projectLink: 'https://breadshop.richardmattsson.se',
-    githubLink: 'https://github.com/richardMattsson/lab_typescript_cypress',
-    imageSrc: '/images/breadshop.jpg',
-    altText: 'image of a online breadshop',
+    title: "Trygghetskollen",
+    eyebrow: "Safer web habits",
+    projectLink: "https://trygghetskollen.richardmattsson.se",
+    githubLink: "https://github.com/richardMattsson/Trygghetskollen",
+    imageSrc: "/images/trygghetskollen.jpg",
+    altText: "image of website Trygghetskollen",
     description:
-      'En fullstack-app byggd med React, Express och Postgres. Testad med Cypress.',
+      "En fullstack-app om tryggare digitala vanor, byggd i grupp och publicerad via Microsoft Azure med frontend, backend och databas i Docker Compose.",
     focus:
-      'Målet var att bygga ett mindre e-handelsflöde där frontend, backend och databas faktiskt hänger ihop på ett realistiskt sätt.',
+      "Syftet var att informera om digitala bedrägerier, samtidigt som vi arbetade med GDPR, personuppgifter och tydlig information till användaren.",
     build:
-      'Jag arbetade med produktflöden, API-kommunikation och databaslogik samt testade viktiga användarflöden med Cypress.',
+      "I gruppen satte vi upp Docker Compose för publicering, deployade på egen server och förbättrade både prestanda och hantering av personuppgifter.",
     nextStep:
-      'Jag skulle vilja vidareutveckla checkout-flödet och göra administrationsdelen tydligare.',
-    tech: 'React, TypeScript, Express, Postgres, Cypress',
+      "Vidareutveckla konto- och personuppgiftshantering, tydligare integritetspolicy och förbättra prestanda och administration.",
+    tech: "React, Node.js, Docker, Azure, GDPR",
   },
   {
-    title: 'Trygghetskollen',
-    eyebrow: 'Safer web habits',
-    projectLink: 'https://trygghetskollen.richardmattsson.se',
-    githubLink: 'https://github.com/richardMattsson/Trygghetskollen',
-    imageSrc: '/images/trygghetskollen.jpg',
-    altText: 'image of website Trygghetskollen',
+    title: "Library",
+    eyebrow: "Book account app",
+    projectLink: "https://richardmattsson.github.io/library/",
+    githubLink: "https://github.com/richardMattsson/Library-code",
+    imageSrc: "/images/harrypotterbild.jpg",
+    altText: "image of library app",
     description:
-      'En fullstack-app om tryggare digitala vanor, byggd i grupp och publicerad via Microsoft Azure med frontend, backend och databas i Docker Compose.',
+      "Ett bibliotek där du kan skapa konto och spara dina favoritböcker och ge betyg.",
     focus:
-      'Syftet var att informera om digitala bedrägerier, samtidigt som vi arbetade med GDPR, personuppgifter och tydlig information till användaren.',
+      "Tanken var att bygga en app där användaren inte bara ser böcker utan också kan skapa en personlig samling och interagera med innehåll.",
     build:
-      'I gruppen satte vi upp Docker Compose för publicering, deployade på egen server och förbättrade både prestanda och hantering av personuppgifter.',
+      "Jag jobbade med kontoflöde, sparade favoriter och ett tydligt grännsnitt för att ge en enkel men personlig upplevelse.",
     nextStep:
-      'Vidareutveckla konto- och personuppgiftshantering, tydligare integritetspolicy och förbättra prestanda och administration.',
-    tech: 'React, Node.js, Docker, Azure, GDPR',
+      "Nästa steg skulle vara starkare sökning, filtrering och mer utvecklad användarprofil.",
+    tech: "React, JavaScript, REST APIs",
   },
   {
-    title: 'Library',
-    eyebrow: 'Book account app',
-    projectLink: 'https://richardmattsson.github.io/library/',
-    githubLink: 'https://github.com/richardMattsson/Library-code',
-    imageSrc: '/images/harrypotterbild.jpg',
-    altText: 'image of library app',
+    title: "Hesa Fredrik",
+    eyebrow: "Crisis preparedness",
+    projectLink: "https://richardmattsson.github.io/hesafredrik/",
+    githubLink: "https://github.com/richardMattsson/hesa-fredrik",
+    imageSrc: "/images/hesafredrik.jpg",
+    altText: "image of app about crisis preparedness",
     description:
-      'Ett bibliotek där du kan skapa konto och spara dina favoritböcker och ge betyg.',
+      "Ett gruppprojekt inom Vue.js och Vite. En app med förberedelser inför en eventuell kris.",
     focus:
-      'Tanken var att bygga en app där användaren inte bara ser böcker utan också kan skapa en personlig samling och interagera med innehåll.',
+      "Projektet hade ett tydligt samhällsfokus: att presentera information om krisberedskap på ett sätt som är enkelt att ta till sig.",
     build:
-      'Jag jobbade med kontoflöde, sparade favoriter och ett tydligt grännsnitt för att ge en enkel men personlig upplevelse.',
+      "I gruppen arbetade vi med struktur, innehåll och ett grännsnitt som skulle fungera för snabb informationshämtning.",
     nextStep:
-      'Nästa steg skulle vara starkare sökning, filtrering och mer utvecklad användarprofil.',
-    tech: 'React, JavaScript, REST APIs',
+      "Jag skulle vilja utveckla det vidare med mer situationsbaserat innehåll och tydligare navigering mellan olika scenarier.",
+    tech: "Vue, Vite, Team Project",
   },
   {
-    title: 'Hesa Fredrik',
-    eyebrow: 'Crisis preparedness',
-    projectLink: 'https://richardmattsson.github.io/hesafredrik/',
-    githubLink: 'https://github.com/richardMattsson/hesa-fredrik',
-    imageSrc: '/images/hesafredrik.jpg',
-    altText: 'image of app about crisis preparedness',
+    title: "Police Events",
+    eyebrow: "Public data interface",
+    projectLink: "https://richardmattsson.github.io/police-events/",
+    githubLink: "https://github.com/richardMattsson/Code-for-police-events",
+    imageSrc: "/images/polisen.jpg",
+    altText: "logo for swedish police",
     description:
-      'Ett gruppprojekt inom Vue.js och Vite. En app med förberedelser inför en eventuell kris.',
+      "Ett Vue.js projekt där det går att hämta information från polisens databas.",
     focus:
-      'Projektet hade ett tydligt samhällsfokus: att presentera information om krisberedskap på ett sätt som är enkelt att ta till sig.',
+      "Jag ville göra offentlig data mer användbar genom att presentera polisens händelser i ett enklare och mer tillgängligt grännsnitt.",
     build:
-      'I gruppen arbetade vi med struktur, innehåll och ett grännsnitt som skulle fungera för snabb informationshämtning.',
+      "Tyngdpunkten låg på API-hämtning, datatransformering och en frontend som snabbt visar relevant information.",
     nextStep:
-      'Jag skulle vilja utveckla det vidare med mer situationsbaserat innehåll och tydligare navigering mellan olika scenarier.',
-    tech: 'Vue, Vite, Team Project',
+      "Nästa steg hade varit att lägga till filtrering och geografisk uppdelning för att göra datan mer användbar.",
+    tech: "CSS, Vue, APIs",
   },
   {
-    title: 'Police Events',
-    eyebrow: 'Public data interface',
-    projectLink: 'https://richardmattsson.github.io/police-events/',
-    githubLink: 'https://github.com/richardMattsson/Code-for-police-events',
-    imageSrc: '/images/polisen.jpg',
-    altText: 'logo for swedish police',
-    description:
-      'Ett Vue.js projekt där det går att hämta information från polisens databas.',
+    title: "Blackjack",
+    eyebrow: "Game logic",
+    projectLink: "https://richardmattsson.github.io/blackjack2/",
+    githubLink: "https://github.com/richardMattsson/blackjack2",
+    imageSrc: "/images/blackjack.png",
+    altText: "image of blackjack-project",
+    description: "Ett blackjack-spel gjord med Native JavaScript.",
     focus:
-      'Jag ville göra offentlig data mer användbar genom att presentera polisens händelser i ett enklare och mer tillgängligt grännsnitt.',
+      "Detta projekt var ett bra sätt att öva på spelregler, tillstånd och logik utan att luta sig mot ett ramverk.",
     build:
-      'Tyngdpunkten låg på API-hämtning, datatransformering och en frontend som snabbt visar relevant information.',
+      "Jag byggde spelets flöde med fokus på kortlogik, användarinteraktion och tydlig feedback i grännsnittet.",
     nextStep:
-      'Nästa steg hade varit att lägga till filtrering och geografisk uppdelning för att göra datan mer användbar.',
-    tech: 'CSS, Vue, APIs',
+      "Jag skulle vilja vidareutveckla det med bättre animationer och tydligare state-hantering.",
+    tech: "JavaScript, DOM manipulation",
   },
   {
-    title: 'Blackjack',
-    eyebrow: 'Game logic',
-    projectLink: 'https://richardmattsson.github.io/blackjack2/',
-    githubLink: 'https://github.com/richardMattsson/blackjack2',
-    imageSrc: '/images/blackjack.png',
-    altText: 'image of blackjack-project',
-    description: 'Ett blackjack-spel gjord med Native JavaScript.',
+    title: "Weather App",
+    eyebrow: "Forecast UI",
+    projectLink: "https://richardmattsson.github.io/weatherApp/",
+    githubLink: "https://github.com/richardMattsson/weatherApp",
+    imageSrc: "/images/weather.png",
+    altText: "image of a weather-app",
+    description: "En väderapp med data hämtad från Open Weather API.",
     focus:
-      'Detta projekt var ett bra sätt att öva på spelregler, tillstånd och logik utan att luta sig mot ett ramverk.',
+      "Målet var att bygga en enkel men tydlig app som visar hur extern data kan bli till ett lättläst grannsnitt.",
     build:
-      'Jag byggde spelets flöde med fokus på kortlogik, användarinteraktion och tydlig feedback i grännsnittet.',
+      "Jag arbetade med API-integration, visning av väderdata och en struktur som gjorde informationen snabb att skanna.",
     nextStep:
-      'Jag skulle vilja vidareutveckla det med bättre animationer och tydligare state-hantering.',
-    tech: 'JavaScript, DOM manipulation',
-  },
-  {
-    title: 'Weather App',
-    eyebrow: 'Forecast UI',
-    projectLink: 'https://richardmattsson.github.io/weatherApp/',
-    githubLink: 'https://github.com/richardMattsson/weatherApp',
-    imageSrc: '/images/weather.png',
-    altText: 'image of a weather-app',
-    description: 'En väderapp med data hämtad från Open Weather API.',
-    focus:
-      'Målet var att bygga en enkel men tydlig app som visar hur extern data kan bli till ett lättläst grannsnitt.',
-    build:
-      'Jag arbetade med API-integration, visning av väderdata och en struktur som gjorde informationen snabb att skanna.',
-    nextStep:
-      'Jag hade fortsatt med prognoser över flera dagar och fler visuella indikatorer för väderläge.',
-    tech: 'JavaScript, API integration',
+      "Jag hade fortsatt med prognoser över flera dagar och fler visuella indikatorer för väderläge.",
+    tech: "JavaScript, API integration",
   },
 ];
 
