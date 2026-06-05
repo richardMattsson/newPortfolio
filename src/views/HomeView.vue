@@ -1,90 +1,120 @@
 <script setup>
-import CVComponent from '../components/CVComponent.vue';
-import ProfileComponent from '../components/ProfileComponent.vue';
-import ProjectsComponent from '../components/ProjectsComponent.vue';
-import NavbarComponent from '../components/NavbarComponent.vue';
-import FooterComponent from '../components/FooterComponent.vue';
+import ContactView from "./ContactView.vue";
+import ProjectSectionsComponent from "../components/ProjectSectionsComponent.vue";
+import ProfileComponent from "../components/ProfileComponent.vue";
+
+const scrollToProjects = () => {
+  document
+    .getElementById("projects-section")
+    ?.scrollIntoView({ behavior: "smooth" })
+}
 </script>
 
 <template>
-  <article id="container">
-    <!-- <p id="logo" class="green-text">R</p> -->
+  <div id="home-view">
+    <article id="container">
+      <div id="profileText">
+        <ProfileComponent />
+      </div>
+       <button class="scroll-link" @click="scrollToProjects">
+   <span class="green-text">Scrolla vidare</span>
+        <span class="scroll-arrow">↓</span>
+  </button>
+      <!-- <a class="scroll-link" href="#projects-section">
+        <span class="green-text">Scrolla vidare</span>
+        <span class="scroll-arrow">↓</span>
+      </a> -->
+    </article>
 
-    <!-- <NavbarComponent id="navbar" /> -->
+    <section id="projects-section" class="home-section">
+      <ProjectSectionsComponent />
+    </section>
 
-    <ProfileComponent id="profileText" />
-    <!-- <ProjectsComponent /> -->
-    <!-- <CVComponent /> -->
-    <!-- <FooterComponent id="footer" /> -->
-  </article>
+    <section class="home-section contact-section-shell">
+      <ContactView id="contact-section" />
+    </section>
+  </div>
 </template>
 
-<style scoped>
-/* #logo {
-  grid-area: logo;
-  margin-left: 20px;
-  margin-top: 20px;
+<style lang="scss" scoped>
+$panel-dark: rgba(17, 34, 64, 0.9);
+$panel-border: rgba(84, 196, 175, 0.18);
+$text-light: #c3c7d6;
+$accent: #54c4af;
+
+html{
+  scroll-behavior: smooth;
 }
-#navbar {
-  grid-area: navbar;
-  margin-left: 20%;
-} */
-#profileText {
-  grid-area: profileText;
-  margin-left: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+#home-view {
   display: flex;
   flex-direction: column;
-  /* flex-grow: 1; */
-  /* border: 1px solid red; */
+  gap: 48px;
+  padding-bottom: 72px;
 }
-body {
-  /* min-height: 100vh;
-  display: flex;
-  flex-direction: column; */
-}
+
 #container {
-  /* border: 1px solid red; */
-  /* width: 100%;
-  display: grid;
-  grid: 10% 70% 20% / 10% 90%;
-  grid-template-areas:
-    'logo navbar'
-    'profileText profileText'
-    'footer footer';
-  height: 100vh; */
-  /* flex-grow: 1; */
-  /* display: flex;
+  min-height: calc(100vh - 100px);
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 24px;
+  width: min(1080px, calc(100% - 40px));
+  margin: 0 auto;
+}
 
-  max-width: 1000px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+#profileText {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+.home-section {
+  width: 100%;
+}
+
+.contact-section-shell {
+  width: min(1080px, calc(100% - 40px));
+  margin: 0 auto;
+  padding-top: 8px;
+}
+
+.scroll-link {
+  width: fit-content;
+  display: inline-flex;
   align-items: center;
+  gap: 12px;
+  color: $text-light;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  background-color: transparent;
+  border: none;
+}
 
-  max-width: 1000px; */
+.scroll-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid $panel-border;
+  border-radius: 999px;
+  color: $accent;
 }
-#footer {
-  margin-top: auto;
-  /* border: 1px solid red;*/
-  /* grid-area: footer; */
-}
-@media only screen and (min-width: 480px) {
-}
+
 @media only screen and (min-width: 768px) {
-  #profileText {
-    grid-area: profileText;
-    margin-left: 80px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    /* flex-grow: 1; */
-    /* border: 1px solid red; */
+  #home-view {
+    gap: 64px;
+    padding-bottom: 96px;
   }
-}
-@media only screen and (min-width: 1279px) {
+
+  #container {
+    width: min(1080px, calc(100% - 80px));
+  }
+
+  .contact-section-shell {
+    width: min(1080px, calc(100% - 80px));
+  }
 }
 </style>

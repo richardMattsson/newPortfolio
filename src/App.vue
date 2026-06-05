@@ -1,6 +1,6 @@
 <script setup>
-import NavbarComponent from './components/NavbarComponent.vue';
-import FooterComponent from './components/FooterComponent.vue';
+import NavbarComponent from "./components/NavbarComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 </script>
 
 <template>
@@ -26,16 +26,17 @@ $primary-dark: #0a192f;
 $text-light: #c3c7d6;
 $text-green: #54c4af;
 
-#app-container {
-  // border: 1px solid red;
+:root {
+  --text-green: #54c4af;
+}
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+#app-container {
   width: 100%;
-  // display: grid;
-  // grid: 100px 80% 10% / 10% 90%;
-  // grid-template-areas:
-  //   'logo navbar'
-  //   'main main'
-  //   'footer footer';
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -53,8 +54,6 @@ $text-green: #54c4af;
   width: 25px;
 }
 #app-logo {
-  // grid-area: logo;
-
   margin-top: 20px;
   font-size: 1.5rem;
   border: $text-green 1px solid;
@@ -67,16 +66,7 @@ $text-green: #54c4af;
   align-items: center;
 }
 
-#app-navbar {
-  // display: flex;
-  // justify-content: center;
-  // grid-area: navbar;
-  // margin-right: 20px;
-  // margin-top: 15px;
-}
 #app-main {
-  // grid-area: main;
-  // margin-bottom: 20px;
   flex-grow: 1;
 }
 body {
@@ -85,26 +75,17 @@ body {
 }
 
 .green-text {
-  color: $text-green;
+  color: var(--text-green);
   font-family: monospace;
   font-weight: bold;
 }
 
 #app-footer {
-  // margin-top: auto;
-  /* border: 1px solid red;*/
-  // grid-area: footer;
-  // overflow: hidden;
   position: relative;
   width: 100%;
   bottom: 0;
 }
 
-@media only screen and (max-width: 400px) {
-}
-
-@media only screen and (min-width: 480px) {
-}
 @media only screen and (min-width: 768px) {
   #app-nav {
     height: 100px;
@@ -128,7 +109,5 @@ body {
   #app-main {
     margin-bottom: 10px;
   }
-}
-@media only screen and (min-width: 1279px) {
 }
 </style>
