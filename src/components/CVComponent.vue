@@ -1,9 +1,5 @@
 <template>
-  <img src="/images/CV-Richard-Mattsson-2.jpg" alt="En bild på mitt CV" />
-
-  <button>
-    <a href="/CV-Richard-Mattsson-2.pdf">Hämta</a>
-  </button>
+ <a class="anchor" href="https://richardmattsson.github.io/cv-code/" target="_blank" rel="noopener noreferrer"><img class="cvimg" src="/images/cv_image_dark.webp" alt="En bild på mitt CV" /></a>
 </template>
 
 <style lang="scss" scoped>
@@ -12,20 +8,12 @@ $dark-color: rgb(0, 30, 66);
 $light-color: #515e7b;
 $yellow-color: #ffd43b;
 
-a {
-  color: $dark-color;
-  font-weight: bold;
-  font-size: 0.8rem;
-  text-decoration: none;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-}
-img {
-  width: 60%;
-  min-width: 200px;
-  // height: 70%;
-  margin-top: 40px;
-  margin-bottom: 20px;
+ .anchor {
+  display: flex;
+  justify-content: center;
+  }
+.cvimg {
+  width: 100%;
   border-radius: 10px;
   border: $dark-color 2px solid;
 }
@@ -44,11 +32,9 @@ button:hover {
   cursor: pointer;
 }
 @media only screen and (max-width: 479px) {
-  img {
+  .cvimg {
     width: 80%;
     min-width: 200px;
-    // height: 70%;
-    margin-top: 40px;
     margin-bottom: 20px;
     border-radius: 10px;
     border: $dark-color 2px solid;
@@ -76,9 +62,7 @@ button:hover {
     box-shadow: 0 4px;
     margin-top: 20px;
   }
-  a {
-    font-size: 1rem;
-  }
+
 }
 @media only screen and (min-width: 768px) {
   button {
@@ -92,17 +76,14 @@ button:hover {
     box-shadow: 0 4px;
     margin-top: 20px;
   }
-  img {
-    max-width: 550px;
+  .cvimg {
+    max-width: 800px;
     height: auto;
     margin-top: 40px;
   }
-  a {
-    font-size: 1rem;
-  }
 }
 @media only screen and (min-width: 1279px) {
-  img {
+  .cvimg {
     max-width: 850px;
     height: auto;
     margin-top: 40px;

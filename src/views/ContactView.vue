@@ -7,87 +7,10 @@ const email = ref('');
 const textEx = ref('');
 const show = ref(true);
 
-// const state = computed(() => (text.value?.length > 2 ? true : false));
-// const stateEmail = computed(() => email.value?.includes('@'));
 </script>
 
 <template>
-  <!-- <article id="contact-article">
-    <h1>FormSubmit Demo</h1>
-    <form
-      target="_blank"
-      action="https://formsubmit.co/mattsson.richard@gmail.com"
-      method="POST"
-    >
-      <div class="form-group">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Full Name" required />
-        </div>
-        <div class="form-row">
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-        </div>
-      </div>
-      <div class="form-group">
-        <textarea
-          placeholder="Your Message"
-          name="message"
-          class="form-control"
-          rows="10"
-          required
-        ></textarea>
-      </div>
 
-      <button type="submit" id="submit-button">Submit Form</button>
-    </form>
-  </article> -->
-
-  <!-- <div class="container">
-    <form
-      target="_blank"
-      action="https://formsubmit.co/your@email.com"
-      method="POST"
-    >
-      <div class="form-group">
-        <div class="form-row">
-          <div class="col">
-            <input
-              type="text"
-              name="name"
-              class="form-control"
-              placeholder="Full Name"
-              required
-            />
-          </div>
-          <div class="col">
-            <input
-              type="email"
-              name="email"
-              class="form-control"
-              placeholder="Email Address"
-              required
-            />
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <textarea
-          placeholder="Your Message"
-          class="form-control"
-          name="message"
-          rows="10"
-          required
-        ></textarea>
-      </div>
-      <button type="submit" class="btn btn-lg btn-dark btn-block">
-        Submit Form
-      </button>
-    </form>
-  </div> -->
 
   <h1>Kontakta mig.</h1>
   <BForm
@@ -109,9 +32,6 @@ const show = ref(true);
             class="bg-transparent text-light"
           />
 
-          <!-- <BFormInvalidFeedback id="input-live-feedback">
-            Använd minst 3 tecken.
-          </BFormInvalidFeedback> -->
         </BCol>
         <BCol cols="12">
           <BFormInput
@@ -167,22 +87,6 @@ h1 {
   align-items: center;
   height: 500px;
   border: 1px solid red;
-}
-.bv-example-row {
-}
-.submit-form {
-}
-.form-group {
-  // display: flex;
-
-  // border: 1px solid red;
-}
-.form-row {
-  // width: 100%;
-  // margin: 5px;
-  // padding: 5px;
-}
-.form-control {
 }
 .form-control::-webkit-input-placeholder {
   color: white;

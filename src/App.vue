@@ -26,8 +26,16 @@ $primary-dark: #0a192f;
 $text-light: #c3c7d6;
 $text-green: #54c4af;
 
+:root {
+  --text-green: #54c4af;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 #app-container {
-  border: 1px solid rgb(104, 59, 228);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -57,6 +65,7 @@ $text-green: #54c4af;
   justify-content: center;
   align-items: center;
 }
+
 #app-main {
   flex-grow: 1;
   // border: 1px solid red;
@@ -67,7 +76,7 @@ body {
 }
 
 .green-text {
-  color: $text-green;
+  color: var(--text-green);
   font-family: monospace;
   font-weight: bold;
 }
@@ -78,11 +87,6 @@ body {
   bottom: 0;
 }
 
-@media only screen and (max-width: 400px) {
-}
-
-@media only screen and (min-width: 480px) {
-}
 @media only screen and (min-width: 768px) {
   #app-nav {
     height: 100px;
@@ -106,7 +110,5 @@ body {
   #app-main {
     margin-bottom: 10px;
   }
-}
-@media only screen and (min-width: 1279px) {
 }
 </style>
