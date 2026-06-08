@@ -6,8 +6,8 @@ import ProfileComponent from "../components/ProfileComponent.vue";
 const scrollToProjects = () => {
   document
     .getElementById("projects-section")
-    ?.scrollIntoView({ behavior: "smooth" })
-}
+    ?.scrollIntoView({ behavior: "smooth" });
+};
 </script>
 
 <template>
@@ -16,18 +16,22 @@ const scrollToProjects = () => {
       <div id="profileText">
         <ProfileComponent />
       </div>
-       <button class="scroll-link" @click="scrollToProjects">
-   <span class="green-text">Scrolla vidare</span>
-        <span class="scroll-arrow">↓</span>
-  </button>
-      <!-- <a class="scroll-link" href="#projects-section">
+      <button class="scroll-link" @click="scrollToProjects">
         <span class="green-text">Scrolla vidare</span>
         <span class="scroll-arrow">↓</span>
-      </a> -->
+      </button>
     </article>
 
     <section id="projects-section" class="home-section">
       <ProjectSectionsComponent />
+    </section>
+
+    <section class="quote-section" aria-label="Personligt citat">
+      <p>
+        "Letar du efter en utvecklare som är engagerad, nyfiken och
+        lösningsorienterad? Jag är alltid intresserad av nya projekt och
+        samarbeten."
+      </p>
     </section>
 
     <section class="home-section contact-section-shell">
@@ -42,14 +46,14 @@ $panel-border: rgba(84, 196, 175, 0.18);
 $text-light: #c3c7d6;
 $accent: #54c4af;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 #home-view {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 15px;
   padding-bottom: 72px;
 }
 
@@ -69,7 +73,29 @@ html{
 }
 
 .home-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-content: center;
+  justify-items: center;
+  gap: 32px;
   width: 100%;
+  padding: 48px 20px;
+}
+
+.quote-section {
+  width: min(900px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 48px 0;
+  text-align: center;
+}
+
+.quote-section p {
+  margin: 0;
+  color: $text-light;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.25;
 }
 
 .contact-section-shell {
@@ -113,8 +139,24 @@ html{
     width: min(1080px, calc(100% - 80px));
   }
 
+  .home-section {
+    gap: 40px;
+    padding-inline: 40px;
+  }
+
+  .quote-section {
+    width: min(900px, calc(100% - 80px));
+    padding: 64px 0;
+  }
+
   .contact-section-shell {
     width: min(1080px, calc(100% - 80px));
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #projects-section {
+    grid-template-columns: repeat(2, minmax(0, 600px));
   }
 }
 </style>

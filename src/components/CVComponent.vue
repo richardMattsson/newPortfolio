@@ -1,5 +1,14 @@
 <template>
- <a class="anchor" href="https://richardmattsson.github.io/cv-code/" target="_blank" rel="noopener noreferrer"><img class="cvimg" src="/images/cv_image_dark.webp" alt="En bild på mitt CV" /></a>
+  <a
+    class="anchor"
+    href="https://richardmattsson.github.io/cv-code/"
+    target="_blank"
+    rel="noopener noreferrer"
+    ><img
+      class="cvimg"
+      src="/images/cv-image-dark.webp"
+      alt="En bild på mitt CV"
+  /></a>
 </template>
 
 <style lang="scss" scoped>
@@ -8,10 +17,10 @@ $dark-color: rgb(0, 30, 66);
 $light-color: #515e7b;
 $yellow-color: #ffd43b;
 
- .anchor {
+.anchor {
   display: flex;
   justify-content: center;
-  }
+}
 .cvimg {
   width: 100%;
   border-radius: 10px;
@@ -62,7 +71,6 @@ button:hover {
     box-shadow: 0 4px;
     margin-top: 20px;
   }
-
 }
 @media only screen and (min-width: 768px) {
   button {

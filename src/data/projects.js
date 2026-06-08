@@ -17,11 +17,12 @@ const projects = [
   //   tech: 'D3, visx, Node.js, Express, Postgres, Docker',
   // },
   {
+    slug: "breadshop",
     title: "Breadshop",
     eyebrow: "E-commerce exercise",
     projectLink: "https://breadshop.richardmattsson.se",
     githubLink: "https://github.com/richardMattsson/lab_typescript_cypress",
-    imageSrc: "/images/breadshop.jpg",
+    imageSrc: "/images/breadshop.webp",
     altText: "image of a online breadshop",
     description:
       "En fullstack-app byggd med React, Express och Postgres. Testad med Cypress.",
@@ -34,29 +35,31 @@ const projects = [
     tech: "React, TypeScript, Express, Postgres, Cypress",
   },
   {
+    slug: "trygghetskollen",
     title: "Trygghetskollen",
     eyebrow: "Safer web habits",
     projectLink: "https://trygghetskollen.richardmattsson.se",
     githubLink: "https://github.com/richardMattsson/Trygghetskollen",
-    imageSrc: "/images/trygghetskollen.jpg",
+    imageSrc: "/images/trygghetskollen.gif",
     altText: "image of website Trygghetskollen",
     description:
-      "En fullstack-app om tryggare digitala vanor, byggd i grupp och publicerad via Microsoft Azure med frontend, backend och databas i Docker Compose.",
+      "En fullstack-app om tryggare digitala vanor, byggd och publicerad via Microsoft Azure med frontend, backend och databas i Docker Compose.",
     focus:
-      "Syftet var att informera om digitala bedrägerier, samtidigt som vi arbetade med GDPR, personuppgifter och tydlig information till användaren.",
+      "Syftet var att informera om digitala bedrägerier, arbeta med GDPR, personuppgifter och tydlig information till användaren.",
     build:
-      "I gruppen satte vi upp Docker Compose för publicering, deployade på egen server och förbättrade både prestanda och hantering av personuppgifter.",
+      "Docker Compose sattes upp för publicering, deployad på egen server och förbättrat prestanda genom att minska storleken på bilder och lazy loading.",
     nextStep:
       "Vidareutveckla konto- och personuppgiftshantering, tydligare integritetspolicy och förbättra prestanda och administration.",
     tech: "React, Node.js, Docker, Azure, GDPR",
   },
   {
+    slug: "library",
     title: "Library",
     eyebrow: "Book account app",
     projectLink: "https://richardmattsson.github.io/library/",
     githubLink: "https://github.com/richardMattsson/Library-code",
-    imageSrc: "/images/harrypotterbild.jpg",
-    altText: "image of library app",
+    imageSrc: "/images/library.gif",
+    altText: "gif image of library app",
     description:
       "Ett bibliotek där du kan skapa konto och spara dina favoritböcker och ge betyg.",
     focus:
@@ -68,23 +71,25 @@ const projects = [
     tech: "React, JavaScript, REST APIs",
   },
   {
+    slug: "hesa-fredrik",
     title: "Hesa Fredrik",
     eyebrow: "Crisis preparedness",
     projectLink: "https://richardmattsson.github.io/hesafredrik/",
     githubLink: "https://github.com/richardMattsson/hesa-fredrik",
-    imageSrc: "/images/hesafredrik.jpg",
+    imageSrc: "/images/hesafredrik.gif",
     altText: "image of app about crisis preparedness",
     description:
-      "Ett gruppprojekt inom Vue.js och Vite. En app med förberedelser inför en eventuell kris.",
+      "Ett projekt byggt med Vue.js och Vite. En app med övningar och quiz som förberedelse inför en kris.",
     focus:
       "Projektet hade ett tydligt samhällsfokus: att presentera information om krisberedskap på ett sätt som är enkelt att ta till sig.",
     build:
-      "I gruppen arbetade vi med struktur, innehåll och ett grännsnitt som skulle fungera för snabb informationshämtning.",
+      "Skapat innehåll och grännsnitt som skulle fungera för snabb informationshämtning.",
     nextStep:
       "Jag skulle vilja utveckla det vidare med mer situationsbaserat innehåll och tydligare navigering mellan olika scenarier.",
-    tech: "Vue, Vite, Team Project",
+    tech: "Vue, Vite",
   },
   {
+    slug: "police-events",
     title: "Police Events",
     eyebrow: "Public data interface",
     projectLink: "https://richardmattsson.github.io/police-events/",
@@ -102,11 +107,12 @@ const projects = [
     tech: "CSS, Vue, APIs",
   },
   {
+    slug: "blackjack",
     title: "Blackjack",
     eyebrow: "Game logic",
     projectLink: "https://richardmattsson.github.io/blackjack2/",
     githubLink: "https://github.com/richardMattsson/blackjack2",
-    imageSrc: "/images/blackjack.png",
+    imageSrc: "/images/blackjack.gif",
     altText: "image of blackjack-project",
     description: "Ett blackjack-spel gjord med Native JavaScript.",
     focus:
@@ -118,6 +124,7 @@ const projects = [
     tech: "JavaScript, DOM manipulation",
   },
   {
+    slug: "weather-app",
     title: "Weather App",
     eyebrow: "Forecast UI",
     projectLink: "https://richardmattsson.github.io/weatherApp/",

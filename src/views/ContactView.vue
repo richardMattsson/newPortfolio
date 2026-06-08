@@ -1,18 +1,15 @@
 <script setup>
-import { BCol, BFormInvalidFeedback, BRow } from 'bootstrap-vue-next';
-import { computed, ref } from 'vue';
+import { BCol, BFormInvalidFeedback, BRow } from "bootstrap-vue-next";
+import { computed, ref } from "vue";
 
-const text = ref('');
-const email = ref('');
-const textEx = ref('');
+const text = ref("");
+const email = ref("");
+const textEx = ref("");
 const show = ref(true);
-
 </script>
 
 <template>
-
-
-  <h1>Kontakta mig.</h1>
+  <h1>Kontakta mig</h1>
   <BForm
     v-if="show"
     target="_blank"
@@ -31,7 +28,6 @@ const show = ref(true);
             name="name"
             class="bg-transparent text-light"
           />
-
         </BCol>
         <BCol cols="12">
           <BFormInput
@@ -68,12 +64,6 @@ const show = ref(true);
 </template>
 
 <style lang="scss" scoped>
-// #article-container {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
 h1 {
   font-size: 2rem;
   margin: 0;

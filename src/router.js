@@ -1,12 +1,13 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 
 import HomeView from './views/HomeView.vue';
 import ProjectsView from './views/ProjectsView.vue';
+import ProjectDetailView from './views/ProjectDetailView.vue';
 import CVView from './views/CVView.vue';
 import ContactView from './views/ContactView.vue';
 
 export default createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes: [
     {
       component: HomeView,
@@ -15,6 +16,10 @@ export default createRouter({
     {
       component: ProjectsView,
       path: '/projects',
+    },
+    {
+      component: ProjectDetailView,
+      path: '/projects/:slug',
     },
     {
       component: CVView,
