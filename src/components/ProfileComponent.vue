@@ -1,5 +1,5 @@
 <script setup>
-import profileImageUrl from '/images/ProfilbildDanmark.JPG?url';
+import profileImageUrl from "/images/ProfilbildDanmark_300.jpg";
 </script>
 
 <template>
@@ -9,13 +9,16 @@ import profileImageUrl from '/images/ProfilbildDanmark.JPG?url';
       <h1>Richard Mattsson.</h1>
       <h2>Jag bygger saker på webben.</h2>
       <p id="description-info">
-        I den här portfolion visar jag projekt jag har arbetat med inom frontend och fullstack. Fokus ligger på gränssnitt, funktion och att bygga lösningar som inte bara fungerar tekniskt utan också är enkla att använda.
+        I den här portfolion visar jag projekt jag har arbetat med inom frontend
+        och fullstack. Fokus ligger på gränssnitt, funktion och att bygga
+        lösningar som inte bara fungerar tekniskt utan också är enkla att
+        använda.
       </p>
     </div>
 
-    <!-- <figure class="profile-avatar">
+    <figure align="right" class="profile-avatar">
       <img :src="profileImageUrl" alt="Portrait of Richard Mattsson" />
-    </figure> -->
+    </figure>
   </article>
 </template>
 
@@ -44,41 +47,15 @@ $text-green: #54c4af;
 }
 
 .profile-avatar {
-  position: relative;
-  width: min(280px, 15vw);
-  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
   margin: 0;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 3px solid rgba(84, 196, 175, 0.5);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
-  isolation: isolate;
-}
-
-.profile-avatar::before {
-  content: "";
-  position: absolute;
-  inset: -18px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(84, 196, 175, 0.22), rgba(84, 196, 175, 0));
-  z-index: -2;
-}
-
-.profile-avatar::after {
-  content: "";
-  position: absolute;
-  inset: 14px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  z-index: 1;
-  pointer-events: none;
+  width: clamp(50%, 50%, 100%);
 }
 
 .profile-avatar img {
-  display: block;
+  border-radius: 50px;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 h1 {
