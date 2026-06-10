@@ -18,11 +18,12 @@ const projects = [
   // },
   {
     slug: "breadshop",
+    align: "vertical",
     title: "Breadshop",
     eyebrow: "E-commerce exercise",
     projectLink: "https://breadshop.richardmattsson.se",
     githubLink: "https://github.com/richardMattsson/lab_typescript_cypress",
-    imageSrc: "/images/breadshop.webp",
+    imageSrc: "/images/breadshop.gif",
     altText: "image of a online breadshop",
     description:
       "En fullstack-app byggd med React, Express och Postgres. Testad med Cypress.",
@@ -36,6 +37,7 @@ const projects = [
   },
   {
     slug: "trygghetskollen",
+    align: "horizontal",
     title: "Trygghetskollen",
     eyebrow: "Safer web habits",
     projectLink: "https://trygghetskollen.richardmattsson.se",
@@ -54,6 +56,7 @@ const projects = [
   },
   {
     slug: "library",
+    align: "horizontal",
     title: "Library",
     eyebrow: "Book account app",
     projectLink: "https://richardmattsson.github.io/library/",
@@ -72,6 +75,7 @@ const projects = [
   },
   {
     slug: "hesa-fredrik",
+    align: "horizontal",
     title: "Hesa Fredrik",
     eyebrow: "Crisis preparedness",
     projectLink: "https://richardmattsson.github.io/hesafredrik/",
@@ -90,6 +94,7 @@ const projects = [
   },
   {
     slug: "police-events",
+    align: "horizontal",
     title: "Police Events",
     eyebrow: "Public data interface",
     projectLink: "https://richardmattsson.github.io/police-events/",
@@ -108,6 +113,7 @@ const projects = [
   },
   {
     slug: "blackjack",
+    align: "horizontal",
     title: "Blackjack",
     eyebrow: "Game logic",
     projectLink: "https://richardmattsson.github.io/blackjack2/",
@@ -125,6 +131,7 @@ const projects = [
   },
   {
     slug: "weather-app",
+    align: "horizontal",
     title: "Weather App",
     eyebrow: "Forecast UI",
     projectLink: "https://richardmattsson.github.io/weatherApp/",

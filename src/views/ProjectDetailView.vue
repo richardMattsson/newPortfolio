@@ -36,8 +36,20 @@ const project = computed(() =>
           </a>
         </div>
       </div>
-
-      <img :src="project.imageSrc" :alt="project.altText" />
+      <div class="project-visuals">
+        <img
+          v-if="project.align === 'horizontal'"
+          class="project-media"
+          :src="project.imageSrc"
+          :alt="project.altText"
+        />
+        <img
+          v-else
+          class="project-media-vertical"
+          :src="project.imageSrc"
+          :alt="project.altText"
+        />
+      </div>
     </header>
 
     <section class="project-info" aria-label="Projektinformation">
@@ -116,7 +128,7 @@ $accent: #54c4af;
 h1 {
   margin: 0;
   color: #ffffff;
-  font-size: clamp(2.4rem, 8vw, 5rem);
+  font-size: clamp(2.4rem, 8vw, 4rem);
   line-height: 1;
 }
 
@@ -142,12 +154,28 @@ h1 {
   background-color: rgba(84, 196, 175, 0.08);
 }
 
-.project-hero img {
-  display: block;
+.project-visuals {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-media {
+  width: 100%;
+  max-height: 200px;
+  max-width: 360px;
+  justify-self: center;
+  border-radius: 5px;
+  overflow: hidden;
   object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  // border-radius: 20px;
+}
+
+.project-media-vertical {
+  max-height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .project-info {

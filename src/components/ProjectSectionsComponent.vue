@@ -54,19 +54,18 @@ const openProjectDetail = (slug) => {
 
     <div class="project-main">
       <div class="project-visuals">
-        <!-- <a
-          class="project-media"
-          :href="project.projectLink"
-          target="_blank"
-          rel="noreferrer"
-          @click.stop
-        > -->
         <img
+          v-if="project.align === 'horizontal'"
           class="project-media"
           :src="project.imageSrc"
           :alt="project.altText"
         />
-        <!-- </a> -->
+        <img
+          v-else
+          class="project-media-vertical"
+          :src="project.imageSrc"
+          :alt="project.altText"
+        />
       </div>
 
       <!-- <div class="project-side">
@@ -167,8 +166,6 @@ $accent: #54c4af;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  gap: 18px;
 }
 
 .project-side {
@@ -250,12 +247,20 @@ $accent: #54c4af;
 }
 
 .project-media {
-  display: block;
   width: 100%;
+  max-height: 200px;
   max-width: 360px;
-  // aspect-ratio: 4 / 3;
   justify-self: center;
-  // border-radius: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.project-media-vertical {
+  max-height: 250px;
+  max-width: 360px;
+  justify-self: center;
+  border-radius: 5px;
   overflow: hidden;
   object-fit: cover;
 }
