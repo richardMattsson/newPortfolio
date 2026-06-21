@@ -4,10 +4,7 @@
     href="https://richardmattsson.github.io/cv-code/"
     target="_blank"
     rel="noopener noreferrer"
-    ><img
-      class="cvimg"
-      src="/images/cv-image-dark.webp"
-      alt="En bild på mitt CV"
+    ><img class="cvimg" src="/images/cv-img-dark.webp" alt="En bild på mitt CV"
   /></a>
 </template>
 
